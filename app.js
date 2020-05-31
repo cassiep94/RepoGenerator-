@@ -51,6 +51,10 @@ function promptUser() {
   ]);
 }
 
+function githubImage(answers){
+
+}
+
 
 function generateHTML(answers) {
   return `
@@ -82,6 +86,8 @@ async function init() {
   console.log("hi")
   try {
     const answers = await promptUser();
+    const githubImage = await getUserImage(answers); // Passing in the answers to get the username of the github
+
     const html = generateHTML(answers);
 
     await writeFileAsync("index.html", html);
