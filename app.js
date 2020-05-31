@@ -11,33 +11,46 @@ function promptUser() {
       name: "name",
       message: "What is your name?"
     },
+
     {
       type: "input",
-      name: "location",
-      message: "Where are you from?"
+      name: "github_username",
+      message: "What is your Github Username?"
     },
     {
       type: "input",
-      name: "hobby",
-      message: "What is your favorite hobby?"
+      name: "project_title",
+      message: "What is your project title?"
+    },
+   
+    {
+      type: "input",
+      name: "project_description",
+      message: "What is your project description?"
     },
     {
       type: "input",
-      name: "food",
-      message: "What is your favorite food?"
+      name: "project_installation_dependancies",
+      message: "What command is used to install your project? project dependancies?"
     },
     {
       type: "input",
-      name: "github",
-      message: "Enter your GitHub Username"
+      name: "project_test",
+      message: "What command is used to run your project test?"
+    },
+     {
+      type: "input",
+      name: "project_unknowns",
+      message: "What does the user need to know?"
     },
     {
       type: "input",
-      name: "linkedin",
-      message: "Enter your LinkedIn URL."
-    }
+      name: "project_contributions",
+      message: "How can a user contribute?"
+    },
   ]);
 }
+
 
 function generateHTML(answers) {
   return `
@@ -69,7 +82,6 @@ async function init() {
   console.log("hi")
   try {
     const answers = await promptUser();
-
     const html = generateHTML(answers);
 
     await writeFileAsync("index.html", html);
