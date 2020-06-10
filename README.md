@@ -1,22 +1,23 @@
-# RepoGenerator-
-Unit 09 Node.js and ES6+ Homework: Good README Generator
 # Project Title
 
- Readme generator
+ Readme creator
+
+ 
+ ![user image](https://avatars2.githubusercontent.com/u/61763353?v=4)
 
 ## Getting Started
 
 Git clone the repo.
-Project is design to create a readme for user. Give the availity to connect dirrectly to their github account. Pull the users photo, and infomation.
+Application is design to allow the user to create a functional app. That will create a readme for the user and pull their picture from their github profile.
 
 ### Installing
 
-Install node
+Terminal
 
 
 ## Running the tests
 
-terminal 
+Terminal, Node.Js
 
 
 ## Built With
@@ -24,23 +25,24 @@ love
 
 ## Project Unknowns
 
-User needs to know minimal javascript, and knowledge of terminal commands. 
+Javascript, and Node.JS with knowlege of terminal.
 
 ## Contributing
 
-adding comments on improvements
+user can use their own github to create future readme's
 
 ## Authors
 
-cassandra perez
-cassiep94
+Cassandra Perez
+Cassiep94
 
 ## License
 
-mit
+MIT
 
 
 ## Acknowledgments
+
 
 
  
